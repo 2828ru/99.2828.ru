@@ -1,0 +1,29 @@
+<!DOCTYPE HTML><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Выделяем активную ссылку по текущему URL</title><link rel="stylesheet" href="https://2828.ru/css/3000.css"><main><!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+nav a {
+display: block;
+background: #eee;
+color: #010101;
+}
+nav a.active {
+background: #010101;
+color: #eee;
+}
+</style>
+<nav>
+<ul>
+<li><a href="/about">about</a><>
+<li><a href="ro/js">js</a><>
+<li><a href="/info">info</a><>
+</ul>
+</nav>
+<script>
+//сделать, чтобы на странице /about ссылка <a href="/about"> была активной, а на странице /info соответственно ссылка <a href="/info"> была активной
+//var curpath = location.pathname.match(/^\/[^/]+/);
+var curpath = location.pathname;
+var link = curpath && document.querySelector('nav a[href="' + curpath + '"]');
+console.log(curpath,location.pathname,curpath[0]);
+if (link) {
+link.className += ' active';
+}
+</script></main>
