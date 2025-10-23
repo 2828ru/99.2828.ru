@@ -1,0 +1,207 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="1.css">
+<body>
+<div class="container">
+<div class="content">
+<div>
+<div class="wrapper">
+   <h1>
+      Типографика
+      <div class="modified">Обновлено 09.02.2018</div>
+   </h1>
+   <div class="block">
+<p>Типографике в интерфейсах нужно уделять особое внимание. Интерфейсы во многом состоят из текста, и от того как набран этот текст, зависит общее восприятие дизайна и удобство работы с системой.
+   </div>
+   <h2>Шрифт</h2>
+   <div class="block">
+<p>Основной шрифт в интерфейсах Контура — Segoe UI. Это стандартный шрифт ОС Windows и он уже есть у подавляющего большинства наших пользователей. Поэтому его не нужно загружать и устанавливать при первом входе — страницы грузятся быстрее и нет неприятного мигания текста.
+      <div class="margin-text">
+
+<p>Шрифт Segoe UI разработан компанией Monotype в 2000 году. С 2007 года является системным шрифтом в Windows 7. Также поставляется вместе с пакетом Microsoft Office.
+      </div>
+   </div>
+   <div class="block">
+<p>Для того, чтобы на маках шрифт рендерился более тонко и не искажался цвет, нужно прописать специальный параметр, например, у тега BODY (работает только в вебкитовых браузерах и только на Маках):
+      <ul>
+         <li class="code">-webkit-font-smoothing: antialiased;</li>
+      </ul>
+   </div>
+   <h2>Заголовки</h2>
+   <div class="block">
+<p>Заголовки различных уровней должны хорошо отличаться. Это помогает точно ориентироваться в тексте и вычленять главное.
+   </div>
+</div>
+<!--.block-light
+   .inner
+     table
+       tr
+         td(style="width: 70%; padding-right: 30px; vertical-align: top;")
+           span(style="padding: 0; margin: 0; font-name: SegoeUI; font-weight:200; font-size: 42px; line-height: 50px") Заголовок H1
+         td(style="width: 30%; padding-bottom:30px;")
+           .code SegoeUI Light <br />font-size: 42px <br />line-height: 50px
+       tr
+         td(style="width: 70%; padding-right: 30px; vertical-align: top;")
+           span(style="padding: 0; margin: 0; font-name: SegoeUI; font-weight:300; font-size: 32px; line-height: 40px") Заголовок H2
+         td(style="width: 30%;  padding-bottom:30px;")
+           .code SegoeUI Semilight <br />font-size: 32px <br />line-height: 40px
+       tr
+         td(style="width: 70%; padding-right: 30px; vertical-align: top;")
+           span(style="padding: 0; margin: 0; font-name: SegoeUI; font-weight:400; font-size: 22px; line-height: 30px") Заголовок H3
+         td(style="width: 30%;  padding-bottom:30px;")
+           .code SegoeUI Normal<br />font-size: 22px <br />line-height: 30px
+       tr
+         td(style="width: 70%; padding-right: 30px; vertical-align: top;")
+           span(style="padding: 0; margin: 0; font-name: SegoeUI; font-weight:600; font-size: 16px; line-height: 25px") Заголовок H4
+         td(style="width: 30%;  padding-bottom:30px;")
+           .code SegoeUI Semibold<br />font-size: 16px <br />line-height: 25px
+   -->
+<div class="block-light">
+   <div class="inner-cols">
+      <div class="col"><span style="padding: 0; margin: 0; font-name: SegoeUI; font-weight:200; font-size: 42px; line-height: 50px">Заголовок H1</span></div>
+      <div class="col">
+         <div class="code">SegoeUI Light <br>font-size: 42px <br>line-height: 50px</div>
+      </div>
+   </div>
+   <div class="inner-cols">
+      <div class="col"><span style="padding: 0; margin: 0; font-name: SegoeUI; font-weight:300; font-size: 32px; line-height: 40px">Заголовок H2</span></div>
+      <div class="col">
+         <div class="code">SegoeUI Semilight <br>font-size: 32px <br>line-height: 40px  </div>
+      </div>
+   </div>
+   <div class="inner-cols">
+      <div class="col"><span style="padding: 0; margin: 0; font-name: SegoeUI; font-weight:400; font-size: 22px; line-height: 30px">Заголовок H3</span></div>
+      <div class="col">
+         <div class="code">SegoeUI Normal<br>font-size: 22px <br>line-height: 30px</div>
+      </div>
+   </div>
+   <div class="inner-cols">
+      <div class="col"><span style="padding: 0; margin: 0; font-name: SegoeUI; font-weight:600; font-size: 16px; line-height: 25px">Заголовок H4</span></div>
+      <div class="col">
+         <div class="code">SegoeUI Semibold<br>font-size: 16px <br>line-height: 25px</div>
+      </div>
+   </div>
+</div>
+<div class="wrapper">
+   <h2>Абзацы  </h2>
+   <div class="block">
+<p>Оптимальное количество символов в строке — 45–75.
+   </div>
+   <div class="block">
+<p>Интерлиньяж зависит от длины строк в абзаце — чем длиннее строки, тем больше межстрочное расстояние. Обычно 130–140 %. Но короткая подпись в несколько строк может быть набрана и с интерлиньяжем 100 %.
+   </div>
+   <div class="block">
+<p>Выравнивать текст по ширине нельзя. Браузеры делают это из рук вон плохо.
+   </div>
+</div>
+<!--.block-light
+   .inner
+     table
+       tr
+         td(style="width: 70%; padding: 0 30px 30px 0;")
+           p(style="font-size:18px;line-height:30px") Крупный текст. Исчисление предикатов заполняет трагический язык образов учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения.
+           p(style="font-size:18px;line-height:30px") Второй абзац. Повторюсь, писания Дюринга представляли собой большую опасность для рабочего движения.
+         td(style="width:30%; vertical-align: top;")
+           .code SegoeUI Normal<br />font-size: 18px <br />line-height: 30px
+       tr
+         td(style="width: 70%; padding: 0 30px 30px 0;")
+           p(style="font-size:16px;line-height:25px") Увеличенный текст. Исчисление предикатов заполняет трагический язык образов учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения.
+           p(style="font-size:16px;line-height:25px") Второй абзац. Повторюсь, писания Дюринга представляли собой большую опасность для рабочего движения.
+         td(style="width:30%; vertical-align: top;")
+           .code SegoeUI Normal <br />font-size: 16px <br />line-height: 25px
+       tr
+         td(style="width: 70%; padding: 0 30px 30px 0;")
+           p(style="font-size:14px;line-height:20px") Обычный текст. Исчисление предикатов заполняет трагический язык образов учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения.
+           p(style="font-size:14px;line-height:20px") Второй абзац. Повторюсь, писания Дюринга представляли собой большую опасность для рабочего движения.
+         td(style="width:30%; vertical-align: top;")
+           .code SegoeUI Normal<br />font-size: 14px <br />line-height: 20px
+       tr
+         td(style="width: 70%; padding: 0 30px 30px 0;")
+           p(style="font-size:12px;line-height:15px") Уменьшенный текст. Исчисление предикатов заполняет трагический язык образов учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения.
+           p(style="font-size:12px;line-height:15px") Второй абзац. Повторюсь, писания Дюринга представляли собой большую опасность для рабочего движения.
+         td(style="width:30%; vertical-align: top;")
+           .code SegoeUI Normal<br />font-size: 12px <br />line-height: 15px
+   -->
+<div class="block-light">
+   <div style="padding: 30px 0" class="inner">
+      <div style="width: 55%; position:relative;" class="text">
+         <p style="font-size:18px;line-height:30px">Крупный текст. Исчисление предикатов заполняет трагический язык образов учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения.
+         <p style="font-size:18px;line-height:30px">Второй абзац. Повторюсь, писания Дюринга представляли собой большую опасность для рабочего движения.
+         <div style="width: 45%; min-width:180px;" class="parametrs">
+            <div class="code">SegoeUI Normal <br>font-size: 18px <br>line-height: 30px</div>
+         </div>
+      </div>
+   </div>
+   <div style="padding: 30px 0" class="inner">
+      <div style="width: 55%; position:relative;" class="text">
+         <p style="font-size:16px;line-height:25px">Увеличенный текст. Исчисление предикатов заполняет трагический язык образов учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения.
+         <p style="font-size:16px;line-height:25px">Второй абзац. Повторюсь, писания Дюринга представляли собой большую опасность для рабочего движения.
+         <div style="width: 45%" class="parametrs">
+            <div class="code">SegoeUI Normal <br>font-size: 16px <br>line-height: 25px</div>
+         </div>
+      </div>
+   </div>
+   <div style="padding: 30px 0" class="inner">
+      <div style="width: 55%; position:relative;" class="text">
+         <p style="font-size:14px;line-height:20px">Обычный текст. Исчисление предикатов заполняет трагический язык образов учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения.
+         <p style="font-size:14px;line-height:20px">Второй абзац. Повторюсь, писания Дюринга представляли собой большую опасность для рабочего движения.
+         <div style="width: 45%" class="parametrs">
+            <div class="code">SegoeUI Normal <br>font-size: 14px <br>line-height: 20px</div>
+         </div>
+      </div>
+   </div>
+   <div style="padding: 30px 0" class="inner">
+      <div style="width: 55%; position:relative;" class="text">
+         <p style="font-size:12px;line-height:15px">Уменьшенный текст. Исчисление предикатов заполняет трагический язык образов учитывая опасность, которую представляли собой писания Дюринга для не окрепшего еще немецкого рабочего движения.
+         <p style="font-size:12px;line-height:15px">Второй абзац. Повторюсь, писания Дюринга представляли собой большую опасность для рабочего движения.
+         <div style="width: 45%" class="parametrs">
+            <div class="code">SegoeUI Normal <br>font-size: 12px <br>line-height: 15px</div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="wrapper">
+   <h2>Разрядка</h2>
+   <div class="block">
+<p>Текст <span class="caps">ПРОПИСНЫМИ</span> набирается вразрядку. Чем мельче текст, тем бо́льшая разрядка нужна. Большой объем текста набирать прописными нежелательно — читаемость хуже.
+   </div>
+   <div class="block">
+<p>Текст строчными никогда не набирается вразрядку. Благодаря выносным элементам у строчных, человек узнает слово по форме. Большая разрядка наоборот превращает слово в набор отдельных букв, что сильно замедляет чтение.
+      <div class="margin-text">
+
+<p><a href="https://ru.wikipedia.org/wiki/Гауди,_Фредерик#Биография" target="_blank">Фредерик Гауди говорил</a>: «Тот, кто набирает строчными вразрядку, способен красть овец».
+      </div>
+   </div>
+   <h2>Тонкий пробел</h2>
+   <div class="block">
+<p>Тонкий пробел или 1/8 круглой шпации используется для отделения порядков в числах, наборе инициалов и некоторых других случаях. В HTML тонкий пробел вставляется мнемонимом &amp;thinsp. Чтобы вставить тонкий пробел в макет, включите в настройках Mac OS ввод юникод символов:
+      <p style="padding: 0 0 0 30px"> System Preferences &gt; Keyboard &gt; Input Sources &gt; Unicode Hex Input
+<p>После чего зажмите клавишу Option и наберите «2009». Не забудьте написать отдельный комментарий для верстальщика, иначе тонкий пробел превратится в обычный.
+   </div>
+   <div class="block">
+<p>Когда тонкий пробел недоступен, нужно ставить обычный. За исключением знаков % и №, их в таком случае лучше набирать без отступов.
+   </div>
+   <h2>Знак рубля</h2>
+   <div class="block">
+<p>Используйте знак рубля — ₽. За знаком рубля закреплен юникодовский символ U+20BD и он присутствует в актуальных версиях Segoe UI и Helvetica Neue.
+   </div>
+   <h2>Телефонные номера</h2>
+   <div class="block">
+<p>Телефонные номера вида (343) 123-45-67 Айфон понимает неправильно. Если открыть на Айфоне страницу с таким телефоном и тапнуть по номеру, то Айфон попытается набрать 343 123-45-67 — не догадается добавить в начало 8 или +7. Решить проблему можно: сверстать так, чтобы Айфон видел +7, а пользователь Айфона — не видел. Если хитрое решение по каким-то причинам невозможно, пишите бесхитростно: +7 343 123-45-67.
+   </div>
+</div>
+<div class="block-light">
+   <div class="inner">IMG</div>
+</div>
+<div style="width: 100%;">
+   <div class="footer">
+      <div class="footer_copywrite">
+
+<p>© 2003–2018 <br><span class="second_line"><a href="#!login" title="Войти">Войти по паролю</a>
+         Написать: <a href="mailto:77&#64;2828.ru">77@2828.ru</a></span>
+         <div style="opacity:0.75" class="addthis_inline_share_toolbox"></div>
+      </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
