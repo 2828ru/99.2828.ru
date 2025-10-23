@@ -1,0 +1,46 @@
+<ul class="menu">
+<li>menu1</li>
+<li>menu2</li>
+<li>menu3</li>
+<li>menu4</li>
+<li>menu5</li>
+</ul>
+<div class="backdrop"></div>
+<div class="content">
+<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, vero, repudiandae! Tenetur, doloribus ad numquam repellat. Totam incidunt architecto quos laboriosam facere iure, ducimus fugit inventore, alias modi eum ipsam.</div>
+<div>Omnis dolore fugit minima, ea nihil repellendus illum dolores. Hic, eos maxime. Facilis odio beatae, est asperiores porro dolorum ab excepturi ducimus reiciendis quam velit eos omnis amet modi consectetur!</div>
+<div>Ex sed, quisquam sint, dolorum odio, cumque a unde iste omnis, doloremque iusto! Cupiditate voluptas consequuntur sequi voluptatum eveniet minus voluptatem aliquid quasi sint, quibusdam deleniti eos culpa, rem ut.</div>
+<div>Laborum aliquid inventore voluptas id quidem ea debitis blanditiis iure. Consequatur eos fugit culpa sunt facere harum magnam voluptatem animi, porro mollitia repellendus praesentium cupiditate provident perferendis quas amet. Sit!</div>
+<div>Dolorem perferendis a aspernatur itaque dolorum beatae dolores amet excepturi consequuntur optio aliquam ipsa, accusamus hic ad, minima, molestias vel doloremque sed. Veniam beatae dignissimos, architecto obcaecati, fugiat vitae nobis.</div>
+<div>Illum ratione sed impedit magni officia molestiae dolorum nostrum, repellat nobis deleniti eius, est. Ut, fuga consequatur odit debitis atque minus quidem voluptatibus. Animi perferendis, quia fuga voluptatem in asperiores!</div>
+<div>Quod excepturi eaque quis voluptatibus, quos iure consequuntur, velit cumque officia ratione laudantium voluptatem voluptates amet. Asperiores nisi, ducimus beatae dolorum ab tenetur suscipit adipisci magnam magni. Soluta optio, cupiditate?</div>
+<div>Ratione, delectus error aut est, repellat repellendus ullam ea ducimus quod nihil, unde consectetur rem incidunt impedit voluptates ipsa adipisci quas hic dolores animi dicta. Est magnam nostrum eligendi adipisci!</div>
+<div>Perferendis est maiores officiis, quae commodi vero. Magni explicabo minima iusto architecto commodi molestiae dolor aspernatur aliquam. Earum libero debitis saepe nesciunt repellat quaerat, quo rerum voluptatibus est nulla! Doloribus.</div>
+<div>Doloribus, ex, quis. Quibusdam veniam animi dignissimos architecto eligendi autem similique, quia. Inventore reprehenderit, velit quibusdam obcaecati, eius accusantium odit dolore omnis voluptatem impedit architecto maiores, quos? Quis, officia, repellat.</div>
+</div>
+<style>
+.menu {
+position: relative;
+z-index:2;
+background: #fff;
+margin:0.4em;
+}
+.menu li {
+display: inline-block;
+padding:1em;
+}
+.backdrop {
+position: fixed;
+left: -100%;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.7);
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+.menu:hover + .backdrop {
+left: 0;
+opacity: 1;
+}
+</style>
